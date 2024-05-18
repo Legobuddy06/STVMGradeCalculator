@@ -82,7 +82,47 @@ document.addEventListener('DOMContentLoaded', function () {
         const averageGPA = count > 0 ? (totalGPA / count).toFixed(2) : 0.00;
         document.getElementById('averageGPA').textContent = `Average GPA: ${averageGPA}`;
         console.log(`Average GPA: ${averageGPA}`);
+        saveData();
+    }
+
+    function saveData() {
+        for (let i = 1; i <= 8; i++) {
+            const classTypeElement = document.getElementById(`classType${i}`);
+            const gradeElement = document.getElementById(`grade${i}`);
+            if (classTypeElement && gradeElement) {
+                localStorage.setItem(`classType${i}`, classTypeElement.value);
+                localStorage.setItem(`grade${i}`, gradeElement.value);
+            }
+        }
+    }
+
+    function loadData() {
+        for (let i = 1; i <= 8; i++) {
+            const classTypeElement = document.getElementById(`classType${i}`);
+            const gradeElement = document.getElementById(`grade${i}`);
+            if (classTypeElement && gradeElement) {
+                classTypeElement.value = localStorage.getItem(`classType${i}`) || 'cp';
+                gradeElement.value = localStorage.getItem(`grade${i}`) || '';
+            }
+        }
+    }
+
+    function resetData() {
+        for (let i = 1; i <= 8; i++) {
+            const classTypeElement = document.getElementById(`classType${i}`);
+            const gradeElement = document.getElementById(`grade${i}`);
+            if (classTypeElement && gradeElement) {
+                classTypeElement.value = 'cp';
+                gradeElement.value = '';
+                localStorage.removeItem(`classType${i}`);
+                localStorage.removeItem(`grade${i}`);
+            }
+        }
+        document.getElementById('averageGPA').textContent = 'Average GPA: ';
     }
 
     document.getElementById('calculateButton').addEventListener('click', calculateGPA);
+    document.getElementById('resetButton').addEventListener('click', resetData);
+
+    loadData();
 });
