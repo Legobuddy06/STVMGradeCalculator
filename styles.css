@@ -15,7 +15,7 @@ body {
     align-items: flex-start;
     gap: 10px;
     width: 300px;
-    padding-top: 20px; /* Add some padding at the top to move the boxes down */
+    padding-top: 20px;
 }
 
 .box {
@@ -46,6 +46,13 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button i {
+    margin: 0;
 }
 
 #averageGPA {
