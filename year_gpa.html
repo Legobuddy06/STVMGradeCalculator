@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year GPA</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Year GPA</h1>
+    <div class="container">
+        <div class="semester-group">
+            <div class="column">
+                <h2>First Semester</h2>
+                <div class="box">
+                    <select id="classType1">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade1">
+                </div>
+                <div class="box">
+                    <select id="classType2">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade2">
+                </div>
+                <div class="box">
+                    <select id="classType3">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade3">
+                </div>
+                <div class="box">
+                    <select id="classType4">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade4">
+                </div>
+                <div class="box">
+                    <select id="classType5">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade5">
+                </div>
+                <div class="box">
+                    <select id="classType6">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade6">
+                </div>
+                <div class="box">
+                    <select id="classType7">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade7">
+                </div>
+                <div class="box">
+                    <select id="classType8">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade8">
+                </div>
+                <div class="box">
+                    <select id="classType9">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade9">
+                </div>
+                <!-- Add more boxes up to 8 -->
+            </div>
+            <div class="column">
+                <h2>Second Semester</h2>
+                <div class="box">
+                    <select id="classType10">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade10">
+                </div>
+                <div class="box">
+                    <select id="classType11">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade11">
+                </div>
+                <div class="box">
+                    <select id="classType12">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade12">
+                </div>
+                <div class="box">
+                    <select id="classType13">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade13">
+                </div>
+                <div class="box">
+                    <select id="classType14">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade14">
+                </div>
+                <div class="box">
+                    <select id="classType15">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade15">
+                </div>
+                <div class="box">
+                    <select id="classType16">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade16">
+                </div>
+                <div class="box">
+                    <select id="classType17">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade17">
+                </div>
+                <div class="box">
+                    <select id="classType18">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade18">
+                </div>
+                <!-- Add more boxes up to 8 -->
+            </div>
+            <div>
+                <button id="calculateButton1">Calculate First Year GPA</button>
+            </div>
+        </div>
+        <div class="semester-group">
+            <div class="column">
+                <h2>Third Semester</h2>
+                <div class="box">
+                    <select id="classType19">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade19">
+                </div>
+                <div class="box">
+                    <select id="classType20">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade20">
+                </div>
+                <div class="box">
+                    <select id="classType21">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade21">
+                </div>
+                <div class="box">
+                    <select id="classType22">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade22">
+                </div>
+                <div class="box">
+                    <select id="classType23">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade23">
+                </div>
+                <div class="box">
+                    <select id="classType24">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade24">
+                </div>
+                <div class="box">
+                    <select id="classType25">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade25">
+                </div>
+                <div class="box">
+                    <select id="classType26">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade26">
+                </div>
+                <div class="box">
+                    <select id="classType27">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade27">
+                </div>
+                <!-- Add more boxes up to 8 -->
+            </div>
+            <div class="column">
+                <h2>Fourth Semester</h2>
+                <div class="box">
+                    <select id="classType28">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade28">
+                </div>
+                <div class="box">
+                    <select id="classType29">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade29">
+                </div>
+                <div class="box">
+                    <select id="classType30">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade30">
+                </div>
+                <div class="box">
+                    <select id="classType31">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade31">
+                </div>
+                <div class="box">
+                    <select id="classType32">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade32">
+                </div>
+                <div class="box">
+                    <select id="classType33">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade33">
+                </div>
+                <div class="box">
+                    <select id="classType34">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade34">
+                </div>
+                <div class="box">
+                    <select id="classType35">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade35">
+                </div>
+                <div class="box">
+                    <select id="classType36">
+                        <option value="cp">CP</option>
+                        <option value="ap">AP</option>
+                        <option value="honors">Honors</option>
+                    </select>
+                    <input type="text" id="grade36">
+                </div>
+                <!-- Add more boxes up to 8 -->
+            </div>
+            <div>
+                <button id="calculateButton2">Calculate Second Year GPA</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="resetButton"><i class="fas fa-redo"></i></button>
+    </div>
+    <div>
+        <p id="averageGPA">Semester GPA: </p>
+    </div>
+    </div>
+    <a href="https://stvmgradecalculator.netlify.app/">Go to STVM GPA Calculator</a>
+    </div>
+    <script src="script_year_gpa.js"></script>
+</body>
+</html>
